@@ -1,7 +1,7 @@
 
 // enter your router SSID and password
-const char * ssid = "NETGEAR84";
-const char * password = "rb76543aaa789&*()cvbn";
+const char * ssid = "your_ssid";
+const char * password = "your_password";
 
 #include <ESP8266WiFi.h>
 
