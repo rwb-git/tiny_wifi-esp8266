@@ -22,9 +22,13 @@ void setup() {
 
   WiFi.mode(WIFI_STA);
 
-  WiFi.begin(); // this will use whatever is in flash
+  //WiFi.begin(); // this will use whatever is in flash
 
-  //WiFi.begin(ssid, password);  // i need to enable this for any new devices that don't have my router ssid/pwd in flash
+  WiFi.begin(ssid, password);  // i need to enable this for any new devices that don't have my router ssid/pwd in flash.
+                               // after your device works, you might want to comment this line out and un-comment the preceding line
+                               // to reduce the number of flash writes. this may no longer be an issue, but at one time people were
+                               // saying that too many writes were causing issues. the above line "WiFi.persistent(false)" supposedly
+                               // stops it from writing the ssid/password in any case.
   
   while (WiFi.status() != WL_CONNECTED){
     
