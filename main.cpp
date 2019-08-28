@@ -1,8 +1,8 @@
 
 // enter your router SSID and password, and use WiFi.begin(ssid,password) at least once in the setup() function. after that you might want to use
 // Wifi.begin() and Wifi.persistent(false) to limit the number of writes to the ESP flash.
-//const char * ssid = "NETGEAR84";
-//const char * password = "rb76543aaa789&*()cvbn";
+//const char * ssid = "your_ssid";
+//const char * password = "your_pwd";
 
 #include "esp_server.h"
 
